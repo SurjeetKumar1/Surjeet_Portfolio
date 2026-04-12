@@ -70,11 +70,11 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <PortfolioCard
-            title="Wanderlust Platform"
-            description="Secure property rental platform featuring 15+ REST APIs, JWT authentication, and Mapbox integrations."
-            imageUrl="/projectImages/Wanderlust.png"
-            linkLabel="Wanderlust"
-            githubUrl="https://github.com/SurjeetKumar1/Wanderlust"
+            title="Profound Portfolio"
+            description="High-performance personal brand platform with a Next.js/Framer Motion frontend and a custom Node.js admin dashboard."
+            imageUrl="/admin_dashboard/portfolio_login_page.png"
+            linkLabel="Portfolio"
+            githubUrl="https://github.com/SurjeetKumar1/Surjeet_Portfolio.git"
           />
           <PortfolioCard
             title="Linkify Social Media"

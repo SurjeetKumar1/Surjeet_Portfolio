@@ -24,7 +24,7 @@ const GalleryItem = ({ title, imageUrl, onClick }) => (
     />
     <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/90 via-black/10 to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
     <div className="absolute inset-x-0 bottom-0 z-20 p-6 flex flex-col items-start justify-end translate-y-1 group-hover:translate-y-0 transition-transform duration-300">
-      <h3 className="text-white text-lg font-medium italic tracking-wide sm:text-xl drop-shadow-lg opacity-90 group-hover:opacity-100 transition-opacity">
+      <h3 className="text-white text-xs font-bold uppercase tracking-[0.2em] sm:text-sm drop-shadow-md opacity-90 group-hover:opacity-100 transition-opacity">
         {title}
       </h3>
     </div>
@@ -58,7 +58,7 @@ const Gallery = () => {
   const galleryItems = [
     { title: "Bytecode Ideathon – Representative", imageUrl: "/galleryImg/Bytecode.jpg" },
     { title: "MLSA Goodies", imageUrl: "/galleryImg/MLSA.png" },
-    { title: "Idea represent", imageUrl: "/galleryImg/Bytecode2.jpg" },
+    // { title: "Idea represent", imageUrl: "/galleryImg/Bytecode2.jpg" },
     { title: "Coding Ninjas Club CUH", imageUrl: "/galleryImg/codingNinjas.jpg" },
     { title: "Science Day(2nd year of College)", imageUrl: "/galleryImg/scienceday.jpeg" }
   ];
@@ -118,7 +118,7 @@ const Gallery = () => {
                 />
               </div>
               <div className="text-center px-4">
-                <p className="text-white text-xl font-bold italic tracking-wider sm:text-3xl drop-shadow-2xl">
+                <p className="text-white text-lg font-bold uppercase tracking-[0.3em] sm:text-2xl drop-shadow-2xl">
                   {selectedImage.title}
                 </p>
               </div>

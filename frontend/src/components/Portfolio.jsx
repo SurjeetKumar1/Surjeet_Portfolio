@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import PortfolioCard from "@/components/PortfolioCard";
 
 const slides = [
+  // { src: '/admin_dashboard/portfolio_login_page.png', label: 'Profound Portfolio — Personal Brand' },
   { src: '/admin_dashboard/admin_dashboard.png', label: 'Admin Dashboard - Portfolio' },
   { src: '/projectImages/Wanderlust.png', label: 'Wanderlust — Property Rental Platform' },
   { src: '/projectImages/Social Media Platform.png', label: 'Linkify — Social Media Platform' },
@@ -14,6 +15,14 @@ const slides = [
 ];
 
 const projects = [
+  {
+    title: "Profound Portfolio — Personal Brand",
+    description: "A high-performance personal portfolio built with Next.js, Framer Motion, and a custom Node.js backend for admin management. Features a 'Floating Command Center' dashboard and optimized file handling.",
+    imageUrl: "/admin_dashboard/portfolio_login_page.png",
+    linkLabel: "Portfolio Project",
+    githubUrl: "https://github.com/SurjeetKumar1/Surjeet_Portfolio.git",
+    liveUrl: "https://surjeet-potfolio.vercel.app/"
+  },
   {
     title: "Wanderlust — Property Rental Platform",
     description: "A secure property rental backend platform featuring 15+ REST APIs, JWT authentication, and Mapbox integrations. Deployed via GitHub Actions to AWS EC2.",
