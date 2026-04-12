@@ -12,11 +12,10 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState('About');
 
   const containerVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
-      y: 0,
-      transition: { 
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
         duration: 0.6,
         staggerChildren: 0.2
       }
@@ -24,7 +23,7 @@ export default function Home() {
   };
 
   const renderContent = () => {
-    switch(activeTab) {
+    switch (activeTab) {
       case 'About': return <About />;
       case 'Resume': return <Resume />;
       case 'Portfolio': return <Portfolio />;
@@ -35,20 +34,20 @@ export default function Home() {
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="bg-[#1e1e1f] rounded-3xl p-8 lg:p-12 min-h-full border border-white/5 relative"
+      className="bg-[#1e1e1f] rounded-[25px] lg:rounded-[25px] p-6 lg:p-12 min-h-full border border-white/5 relative"
     >
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
-      
+
       <AnimatePresence mode="wait">
         <motion.div
           key={activeTab}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
         >
           {renderContent()}

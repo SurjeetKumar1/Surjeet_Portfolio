@@ -6,9 +6,9 @@ const GithubIcon = ({ size = 20 }) => (
   </svg>
 );
 
-const PortfolioCard = ({ title, description, imageUrl, linkLabel, githubUrl }) => {
+const PortfolioCard = ({ title, description, imageUrl, linkLabel, githubUrl, liveUrl }) => {
   return (
-    <div className="group bg-[#212123] rounded-3xl overflow-hidden border border-white/5 hover:border-teal-400/30 transition-all">
+    <div className="group bg-[#212123] rounded-2xl overflow-hidden border border-white/5 hover:border-teal-400/30 transition-all">
       <div className="h-48 overflow-hidden relative">
         <img 
           src={imageUrl} 
@@ -16,9 +16,18 @@ const PortfolioCard = ({ title, description, imageUrl, linkLabel, githubUrl }) =
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-          <div className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center text-teal-400 border border-white/10">
-            <ExternalLink size={20} />
-          </div>
+          {liveUrl ? (
+            <a href={liveUrl} target="_blank" rel="noopener noreferrer"
+              className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center text-teal-400 border border-white/10 hover:bg-teal-400 hover:text-black transition-all"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <ExternalLink size={20} />
+            </a>
+          ) : (
+            <div className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center text-teal-400 border border-white/10">
+              <ExternalLink size={20} />
+            </div>
+          )}
           {githubUrl && (
             <a href={githubUrl} target="_blank" rel="noopener noreferrer"
               className="w-12 h-12 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center text-white hover:text-teal-400 border border-white/10 transition-colors"
@@ -33,17 +42,30 @@ const PortfolioCard = ({ title, description, imageUrl, linkLabel, githubUrl }) =
         <p className="text-white/50 text-xs tracking-wide mb-3">URL : {linkLabel}</p>
         <h3 className="text-white text-xl font-bold mb-3">{title}</h3>
         <p className="text-white/60 text-sm leading-relaxed mb-4">{description}</p>
-        {githubUrl && (
-          <a 
-            href={githubUrl} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-white/40 hover:text-teal-400 text-xs font-semibold transition-colors group/link"
-          >
-            <GithubIcon size={14} />
-            <span className="group-hover/link:underline">View on GitHub</span>
-          </a>
-        )}
+        <div className="flex items-center gap-4">
+          {githubUrl && (
+            <a 
+              href={githubUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-white/40 hover:text-teal-400 text-xs font-semibold transition-colors group/link"
+            >
+              <GithubIcon size={14} />
+              <span className="group-hover/link:underline">View on GitHub</span>
+            </a>
+          )}
+          {liveUrl && (
+            <a 
+              href={liveUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-white/40 hover:text-teal-400 text-xs font-semibold transition-colors group/link"
+            >
+              <ExternalLink size={14} />
+              <span className="group-hover/link:underline">Live Demo</span>
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
