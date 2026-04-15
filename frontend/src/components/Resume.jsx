@@ -8,7 +8,7 @@ const TimelineItem = ({ title, company, date, description }) => (
     {/* Dot */}
     <div className="absolute left-[8px] top-2 w-[7px] h-[7px] rounded-full bg-teal-400 border-[1px] border-[#1e1e1f] shadow-[0_0_0_2px_#1e1e1f,0_0_0_5px_rgba(45,212,191,0.2)]"></div>
 
-    <div className="bg-[#2b2b2c] p-6 rounded-2xl border border-white/5 shadow-lg group-hover:border-white/10 transition-colors">
+    <div className="bg-[#2b2b2c] p-3 sm:p-5 rounded-2xl border border-white/5 shadow-lg group-hover:border-white/10 transition-colors">
       <h4 className="text-white text-base font-bold mb-1">{title}</h4>
       <p className="text-white/60 text-sm mb-3 font-medium">{company}</p>
       <span className="inline-block text-teal-400 text-xs font-semibold mb-3 tracking-wide">{date}</span>

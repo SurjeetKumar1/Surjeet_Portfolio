@@ -38,7 +38,7 @@ const Sidebar = () => {
       className="bg-[#1e1e1f] rounded-2xl lg:rounded-2xl p-5 lg:p-8 flex flex-wrap lg:flex-col items-center text-center w-full lg:w-72 border border-white/5 lg:sticky lg:top-8 h-fit gap-x-4 lg:gap-x-0 transition-shadow duration-300 overflow-hidden"
     >
       {/* Profile Image */}
-      <div className="w-16 h-16 lg:w-36 lg:h-36 bg-[#2b2b2c] rounded-xl lg:rounded-2xl lg:mb-6 overflow-hidden flex items-center justify-center border border-white/10 shadow-xl flex-shrink-0">
+      <div className="w-24 h-24 lg:w-40 lg:h-40 bg-[#2b2b2c] rounded-xl lg:rounded-2xl lg:mb-6 overflow-hidden flex items-center justify-center border border-white/10 shadow-xl flex-shrink-0">
         <img
           src="/profile_avatar.png"
           alt="Profile"
@@ -49,11 +49,11 @@ const Sidebar = () => {
       <div className="flex-1 text-left lg:text-center mt-0 lg:mt-0">
         <h1 className="text-white text-xl lg:text-3xl font-bold mb-1 lg:mb-2 tracking-wide italic" style={{ fontFamily: "'Playfair Display', serif" }}>Surjeet</h1>
         <div className="bg-[#2b2b2c] text-[10px] text-white/80 px-3 lg:px-4 py-1 lg:py-1.5 rounded-lg mb-0 lg:mb-8 uppercase tracking-widest font-bold w-fit lg:mx-auto">
-          Full Stack Developer
+          Software Developer
         </div>
       </div>
 
-      <button 
+      <button
         onClick={() => setIsExpanded(!isExpanded)}
         className={`lg:hidden p-2 text-white/40 hover:text-teal-400 transition-all duration-300 ${isExpanded ? 'rotate-180' : ''}`}
       >
@@ -65,18 +65,18 @@ const Sidebar = () => {
         {(isExpanded || !isMobile) && (
           <motion.div
             initial={isMobile ? { height: 0, opacity: 0 } : false}
-            animate={{ 
-              height: 'auto', 
+            animate={{
+              height: 'auto',
               opacity: 1,
-              transition: { 
+              transition: {
                 height: { duration: 0.4, ease: [0.4, 0, 0.2, 1] },
                 opacity: { duration: 0.2, delay: 0.1 }
-              } 
+              }
             }}
-            exit={{ 
-              height: 0, 
+            exit={{
+              height: 0,
               opacity: 0,
-              transition: { 
+              transition: {
                 height: { duration: 0.3, ease: [0.4, 0, 0.2, 1] },
                 opacity: { duration: 0.1 }
               }

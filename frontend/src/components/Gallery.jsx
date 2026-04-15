@@ -23,7 +23,7 @@ const GalleryItem = ({ title, imageUrl, onClick }) => (
       }}
     />
     <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/90 via-black/10 to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
-    <div className="absolute inset-x-0 bottom-0 z-20 p-6 flex flex-col items-start justify-end translate-y-1 group-hover:translate-y-0 transition-transform duration-300">
+    <div className="absolute inset-x-0 bottom-0 z-20 p-3 sm:p-5 flex flex-col items-start justify-end translate-y-1 group-hover:translate-y-0 transition-transform duration-300">
       <h3 className="text-white text-xs font-bold uppercase tracking-[0.2em] sm:text-sm drop-shadow-md opacity-90 group-hover:opacity-100 transition-opacity">
         {title}
       </h3>

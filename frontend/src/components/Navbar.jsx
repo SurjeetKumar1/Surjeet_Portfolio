@@ -1,7 +1,7 @@
 'use client';
 
 const Navbar = ({ activeTab, setActiveTab }) => {
-  const links = ['About', 'Resume', 'Portfolio', 'Contact', 'Gallery'];
+  const links = ['About', 'Resume', 'Projects', 'Contact', 'Gallery'];
 
   return (
     <>
@@ -28,8 +28,8 @@ const Navbar = ({ activeTab, setActiveTab }) => {
               <button
                 onClick={() => setActiveTab(link)}
                 className={`text-[11px] font-bold transition-all px-3 py-1.5 rounded-xl ${activeTab === link
-                    ? 'text-teal-400 bg-teal-400/10'
-                    : 'text-white/40'
+                  ? 'text-teal-400 bg-teal-400/10'
+                  : 'text-white/40'
                   }`}
               >
                 {link}

@@ -50,7 +50,7 @@ const About = () => {
             <motion.div
               key={i}
               whileHover={{ y: -5, borderColor: 'rgba(45, 212, 191, 0.2)' }}
-              className="bg-[#2b2b2c] p-6 lg:p-8 rounded-2xl lg:rounded-2xl border border-white/5 transition-colors group shadow-lg"
+              className="bg-[#2b2b2c] p-3 sm:p-5 lg:p-8 rounded-2xl lg:rounded-2xl border border-white/5 transition-colors group shadow-lg"
             >
               <h4 className="text-teal-400 text-4xl font-bold mb-3 group-hover:scale-110 transition-transform origin-left">{item.val}</h4>
               <p className="text-white/40 text-[11px] uppercase font-bold tracking-[0.2em] leading-relaxed">{item.label}</p>

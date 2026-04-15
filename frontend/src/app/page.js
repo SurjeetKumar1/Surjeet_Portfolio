@@ -26,7 +26,7 @@ export default function Home() {
     switch (activeTab) {
       case 'About': return <About />;
       case 'Resume': return <Resume />;
-      case 'Portfolio': return <Portfolio />;
+      case 'Projects': return <Portfolio />;
       case 'Contact': return <Contact />;
       case 'Gallery': return <Gallery />;
       default: return <About />;
@@ -38,7 +38,7 @@ export default function Home() {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="bg-[#1e1e1f] rounded-[25px] lg:rounded-[25px] p-6 lg:p-12 min-h-full border border-white/5 relative"
+      className="bg-[#1e1e1f] rounded-[25px] lg:rounded-[25px] p-3 sm:p-5 lg:p-12 min-h-full border border-white/5 relative"
     >
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
 
