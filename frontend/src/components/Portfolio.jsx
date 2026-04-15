@@ -11,7 +11,7 @@ const slides = [
   { src: '/projectImages/Social Media Platform.png', label: 'Linkify — Social Media Platform' },
   { src: '/projectImages/Chat Aplication.png', label: 'Apna AI — AI Chat Application' },
   { src: '/projectImages/Zeroda.png', label: 'Zeroda — Trading Dashboard' },
-  { src: '/projectImages/holdings.png', label: 'Holdings — Portfolio Tracker' },
+  { src: '/projectImages/holdings.png', label: 'Kite — Trading Interface' },
 ];
 
 const projects = [
@@ -56,10 +56,10 @@ const projects = [
     liveUrl: "https://zerodha-snowy-three.vercel.app/"
   },
   {
-    title: "Holdings — Portfolio Tracker",
-    description: "A comprehensive investment tracking dashboard that visualizes stock performance and portfolio diversification with clean, interactive charts.",
+    title: "Kite Dashboard — Trading Interface",
+    description: "A fast, clean trading dashboard inspired by Zerodha Kite, featuring real-time-like visualizations and interactive portfolio charts.",
     imageUrl: "/projectImages/holdings.png",
-    linkLabel: "Holdings App",
+    linkLabel: "Kite App",
     githubUrl: "#",
     liveUrl: "https://zerodha-kite-kappa.vercel.app/login"
   }
