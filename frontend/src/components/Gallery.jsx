@@ -69,7 +69,7 @@ const Gallery = () => {
       initial="hidden"
       animate="visible"
     >
-      <motion.h2 variants={itemVariants} className="text-white text-3xl font-bold mb-12 flex items-center justify-between">
+      <motion.h2 variants={itemVariants} className="text-white text-3xl font-bold mb-12 mt-8 md:mt-0 flex items-center justify-between">
         <span className="teal-underline">Pixels & Passion</span>
       </motion.h2>
 

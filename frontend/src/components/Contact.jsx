@@ -74,12 +74,12 @@ const Contact = () => {
   };
 
   return (
-    <motion.section 
+    <motion.section
       initial="hidden"
       animate="visible"
       transition={{ staggerChildren: 0.1 }}
     >
-      <motion.h2 variants={itemVariants} className="text-white text-3xl font-bold mb-12 flex items-center justify-between">
+      <motion.h2 variants={itemVariants} className="text-white text-3xl font-bold mb-12 mt-8 md:mt-0 flex items-center justify-between">
         <span className="teal-underline">Let's Connect</span>
       </motion.h2>
 
@@ -87,13 +87,13 @@ const Contact = () => {
         {/* Map Embed */}
         <motion.div variants={itemVariants} className="w-full h-80 rounded-[2rem] overflow-hidden border border-white/5 shadow-2xl relative">
           <div className="absolute inset-0 bg-teal-400 mix-blend-color opacity-10 pointer-events-none"></div>
-          <iframe 
-            src="https://maps.google.com/maps?q=27.0257699,79.9215322&z=16&output=embed" 
-            width="100%" 
-            height="100%" 
-            style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) brightness(85%) contrast(85%)' }} 
-            allowFullScreen="" 
-            loading="lazy" 
+          <iframe
+            src="https://maps.google.com/maps?q=27.0257699,79.9215322&z=16&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) brightness(85%) contrast(85%)' }}
+            allowFullScreen=""
+            loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </motion.div>
@@ -101,7 +101,7 @@ const Contact = () => {
         {/* Contact Details */}
         <motion.div variants={itemVariants}>
           <h3 className="text-white text-2xl font-bold mb-6">Contact Details</h3>
-          <div className="bg-[#2b2b2c] p-8 rounded-3xl border border-white/5 shadow-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+          <div className="bg-[#2b2b2c] p-6 md:p-8 rounded-3xl border border-white/5 shadow-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
             <div className="space-y-8">
               <div className="flex items-center gap-5 group cursor-default">
                 <div className="w-14 h-14 bg-[#1e1e1f] rounded-2xl flex items-center justify-center text-teal-400 border border-teal-400/10 group-hover:bg-teal-400 group-hover:text-black transition-all duration-300 shadow-md">
@@ -127,14 +127,14 @@ const Contact = () => {
             {/* QR Code */}
             <div className="w-36 h-36 bg-white rounded-2xl p-2 shrink-0 shadow-lg hidden sm:block border border-white/10 group cursor-pointer transition-transform hover:scale-105">
               <div className="w-full h-full border border-gray-100 rounded-xl flex items-center justify-center relative overflow-hidden">
-                <img 
-                  src="/phoneNumberQR/phone_qr.png" 
-                  alt="Phone QR" 
-                  className="w-full h-full object-contain p-1" 
-                  onError={(e) => { 
-                    e.target.style.display='none'; 
-                    e.target.parentElement.innerHTML = '<div class="text-[10px] text-gray-400 font-bold text-center px-2">QR Code<br/>(Scan to Call)</div>'; 
-                  }} 
+                <img
+                  src="/phoneNumberQR/phone_qr.png"
+                  alt="Phone QR"
+                  className="w-full h-full object-contain p-1"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.parentElement.innerHTML = '<div class="text-[10px] text-gray-400 font-bold text-center px-2">QR Code<br/>(Scan to Call)</div>';
+                  }}
                 />
               </div>
             </div>
@@ -144,11 +144,11 @@ const Contact = () => {
         {/* Contact Form */}
         <motion.div variants={itemVariants}>
           <h3 className="text-white text-2xl font-bold mb-6">Contact Form</h3>
-          
-          <div className="bg-[#2b2b2c] p-8 rounded-3xl border border-white/5 shadow-lg">
+
+          <div className="bg-[#2b2b2c] p-5 md:p-8 rounded-3xl border border-white/5 shadow-lg">
             {status.message && (
-              <motion.div 
-                initial={{ opacity: 0, y: -10 }} 
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 className={`mb-6 p-4 rounded-2xl flex items-center gap-3 ${status.type === 'success' ? 'bg-teal-400/10 text-teal-400 border border-teal-400/20' : 'bg-red-400/10 text-red-400 border border-red-400/20'}`}
               >
@@ -159,46 +159,46 @@ const Contact = () => {
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Full Name" 
+                  placeholder="Full Name"
                   required
                   className="w-full bg-[#1e1e1f] text-white/90 placeholder:text-white/30 px-6 py-4 rounded-2xl border border-white/5 focus:outline-none focus:border-teal-400/50 focus:ring-1 focus:ring-teal-400/50 transition-all font-medium"
                 />
-                <input 
-                  type="email" 
+                <input
+                  type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="Email Address" 
+                  placeholder="Email Address"
                   required
                   className="w-full bg-[#1e1e1f] text-white/90 placeholder:text-white/30 px-6 py-4 rounded-2xl border border-white/5 focus:outline-none focus:border-teal-400/50 focus:ring-1 focus:ring-teal-400/50 transition-all font-medium"
                 />
               </div>
-              
-              <textarea 
+
+              <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Your Message" 
+                placeholder="Your Message"
                 rows="6"
                 required
                 className="w-full bg-[#1e1e1f] text-white/90 placeholder:text-white/30 px-6 py-4 rounded-2xl border border-white/5 focus:outline-none focus:border-teal-400/50 focus:ring-1 focus:ring-teal-400/50 transition-all resize-none font-medium"
               ></textarea>
 
               <div className="w-full">
-                <input 
-                  type="file" 
+                <input
+                  type="file"
                   accept=".pdf"
                   ref={fileInputRef}
                   onChange={handleFileChange}
                   className="hidden"
                 />
-                <button 
-                  type="button" 
+                <button
+                  type="button"
                   onClick={() => fileInputRef.current.click()}
                   className={`w-full bg-[#1e1e1f] px-6 py-4 rounded-2xl border border-white/5 flex items-center justify-center gap-3 transition-all font-semibold ${file ? 'text-teal-400 border-teal-400/30' : 'text-teal-400/80 hover:text-teal-400 hover:border-teal-400/20'}`}
                 >
@@ -208,12 +208,12 @@ const Contact = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row justify-end items-center gap-6 pt-4">
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   disabled={loading}
                   className="bg-[#1e1e1f] text-white/90 hover:text-teal-400 hover:bg-[#252526] hover:border-teal-400/30 px-8 py-4 rounded-2xl border border-white/5 flex items-center justify-center gap-3 transition-all font-bold w-full sm:w-auto disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {loading ? <Loader2 className="animate-spin" size={18} /> : <Send size={18} />} 
+                  {loading ? <Loader2 className="animate-spin" size={18} /> : <Send size={18} />}
                   {loading ? 'Sending...' : 'Send Message'}
                 </button>
               </div>

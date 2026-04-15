@@ -35,10 +35,10 @@ const Sidebar = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="bg-[#1e1e1f] rounded-2xl lg:rounded-2xl p-5 lg:p-8 flex flex-wrap lg:flex-col items-center text-center w-full lg:w-72 border border-white/5 lg:sticky lg:top-8 h-fit gap-x-4 lg:gap-x-0 transition-shadow duration-300 overflow-hidden"
+      className="bg-[#1e1e1f] rounded-2xl lg:rounded-2xl p-5 lg:p-8 flex flex-wrap lg:flex-col items-center text-center w-full lg:w-72 border border-white/5 lg:sticky lg:top-8 h-fit gap-x-4 lg:gap-x-0 transition-shadow duration-300 overflow-hidden relative"
     >
       {/* Profile Image */}
-      <div className="w-24 h-24 lg:w-40 lg:h-40 bg-[#2b2b2c] rounded-xl lg:rounded-2xl lg:mb-6 overflow-hidden flex items-center justify-center border border-white/10 shadow-xl flex-shrink-0">
+      <div className="w-20 h-20 lg:w-40 lg:h-40 bg-[#2b2b2c] rounded-xl lg:rounded-2xl lg:mb-6 overflow-hidden flex items-center justify-center border border-white/10 shadow-xl flex-shrink-0">
         <img
           src="/profile_avatar.png"
           alt="Profile"
@@ -47,7 +47,7 @@ const Sidebar = () => {
       </div>
 
       <div className="flex-1 text-left lg:text-center mt-0 lg:mt-0">
-        <h1 className="text-white text-xl lg:text-3xl font-bold mb-1 lg:mb-2 tracking-wide italic" style={{ fontFamily: "'Playfair Display', serif" }}>Surjeet</h1>
+        <h1 className="text-white text-xl lg:text-3xl font-bold mb-1 lg:mb-2 tracking-wide italic" style={{ fontFamily: "'Playwrite NO', cursive" }}>Surjeet</h1>
         <div className="bg-[#2b2b2c] text-[10px] text-white/80 px-3 lg:px-4 py-1 lg:py-1.5 rounded-lg mb-0 lg:mb-8 uppercase tracking-widest font-bold w-fit lg:mx-auto">
           Software Developer
         </div>
@@ -55,7 +55,7 @@ const Sidebar = () => {
 
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className={`lg:hidden p-2 text-white/40 hover:text-teal-400 transition-all duration-300 ${isExpanded ? 'rotate-180' : ''}`}
+        className={`lg:hidden absolute top-0 right-0 p-4 bg-[#2b2b2c] rounded-bl-[20px] border-b border-l border-white/5 text-white/40 hover:text-teal-400 transition-all duration-300 z-10 ${isExpanded ? 'rotate-180' : ''}`}
       >
         <ChevronDown size={20} />
       </button>

@@ -22,7 +22,7 @@ const About = () => {
       animate="visible"
     >
       <motion.section variants={itemVariants}>
-        <h2 className="text-white text-3xl font-bold mb-8 teal-underline">Digital Identity</h2>
+        <h2 className="text-white text-3xl font-bold mb-8 mt-8 md:mt-0 teal-underline">Digital Identity</h2>
 
         <div className="space-y-6 text-white/70 leading-relaxed max-w-3xl">
           <p>

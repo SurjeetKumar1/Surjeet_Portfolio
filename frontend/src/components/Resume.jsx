@@ -65,7 +65,7 @@ const Resume = () => {
       initial="hidden"
       animate="visible"
     >
-      <motion.h2 variants={itemVariants} className="text-white text-3xl font-bold mb-12">
+      <motion.h2 variants={itemVariants} className="text-white text-3xl font-bold mb-12 mt-8 md:mt-0">
         Career Snapshot
       </motion.h2>
 
@@ -167,7 +167,7 @@ const Resume = () => {
         <motion.div variants={itemVariants}>
           <h3 className="text-white text-2xl font-bold mb-8">Technical Skills</h3>
 
-          <div className="bg-[#2b2b2c] p-8 rounded-3xl border border-white/5 shadow-lg">
+          <div className="bg-[#2b2b2c] p-6 md:p-8 rounded-3xl border border-white/5 shadow-lg">
             <SkillBar name="C / C++" percentage={90} />
             <SkillBar name="JavaScript" percentage={85} />
             <SkillBar name="Data Structures & Algorithms" percentage={85} />
