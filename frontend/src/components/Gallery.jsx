@@ -56,11 +56,13 @@ const Gallery = () => {
   };
 
   const galleryItems = [
-    { title: "Bytecode Ideathon – Representative", imageUrl: "/galleryImg/Bytecode.jpg" },
-    { title: "MLSA Goodies", imageUrl: "/galleryImg/MLSA.png" },
+    { title: "Late Night Coding @ Hostel", imageUrl: "https://res.cloudinary.com/di6zndqso/image/upload/v1776333545/WhatsApp_Image_2026-04-16_at_15.28.21_rjse4q.jpg" },
+    { title: "Gen AI study JAM goodies", imageUrl: "https://res.cloudinary.com/di6zndqso/image/upload/v1776327548/gen_Ai_study_Jam_rgkbeh.jpg" },
+    { title: "Bytecode Ideathon – Representative", imageUrl: "https://res.cloudinary.com/di6zndqso/image/upload/v1776330930/Bytecode_d3udqe.jpg" },
+    { title: "MLSA Goodies", imageUrl: "https://res.cloudinary.com/di6zndqso/image/upload/v1776331236/MLSA_snniql.png" },
     // { title: "Idea represent", imageUrl: "/galleryImg/Bytecode2.jpg" },
-    { title: "Coding Ninjas Club CUH", imageUrl: "/galleryImg/codingNinjas.jpg" },
-    { title: "Science Day(2nd year of College)", imageUrl: "/galleryImg/scienceday.jpeg" }
+    { title: "Coding Ninjas Club CUH", imageUrl: "https://res.cloudinary.com/di6zndqso/image/upload/v1776330932/codingNinjas_iuvkmo.jpg" },
+    { title: "Science Day(2nd year of College)", imageUrl: "https://res.cloudinary.com/di6zndqso/image/upload/v1776330931/scienceday_upsesu.jpg" }
   ];
 
   return (
@@ -69,8 +71,8 @@ const Gallery = () => {
       initial="hidden"
       animate="visible"
     >
-      <motion.h2 variants={itemVariants} className="text-white text-3xl font-bold mb-12 mt-8 md:mt-0 flex items-center justify-between">
-        <span className="teal-underline">Pixels & Passion</span>
+      <motion.h2 variants={itemVariants} className="text-white text-3xl font-bold mb-12 mt-4 md:mt-0 teal-underline">
+        Pixels & Passion
       </motion.h2>
 
       <motion.div variants={itemVariants} className="grid grid-cols-2 sm:grid-cols-3 gap-6">

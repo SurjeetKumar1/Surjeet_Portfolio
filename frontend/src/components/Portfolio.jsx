@@ -6,19 +6,19 @@ import PortfolioCard from "@/components/PortfolioCard";
 
 const slides = [
   // { src: '/admin_dashboard/portfolio_login_page.png', label: 'Profound Portfolio — Personal Brand' },
-  { src: '/admin_dashboard/admin_dashboard.png', label: 'Admin Dashboard - Portfolio' },
-  { src: '/projectImages/Wanderlust.png', label: 'Wanderlust — Property Rental Platform' },
-  { src: '/projectImages/Social Media Platform.png', label: 'Linkify — Social Media Platform' },
-  { src: '/projectImages/Chat Aplication.png', label: 'Apna AI — AI Chat Application' },
-  { src: '/projectImages/Zeroda.png', label: 'Zeroda — Trading Dashboard' },
-  { src: '/projectImages/holdings.png', label: 'Kite — Trading Interface' },
+  { src: 'https://res.cloudinary.com/di6zndqso/image/upload/v1776331816/Screenshot_2026-04-16_at_2.59.52_PM_h3quri.png', label: 'Admin Dashboard - Portfolio' },
+  { src: 'https://res.cloudinary.com/di6zndqso/image/upload/v1776331147/Wanderlust_xq47lf.png', label: 'Wanderlust — Property Rental Platform' },
+  { src: 'https://res.cloudinary.com/di6zndqso/image/upload/v1776331147/Social_Media_Platform_nsbfq1.png', label: 'Linkify — Social Media Platform' },
+  { src: 'https://res.cloudinary.com/di6zndqso/image/upload/v1776332082/frontend-live-chat_rzfdhq.png', label: 'Apna AI — AI Chat Application' },
+  { src: 'https://res.cloudinary.com/di6zndqso/image/upload/v1776331148/Zeroda_hhz7qj.png', label: 'Zeroda — Trading Dashboard' },
+  { src: 'https://res.cloudinary.com/di6zndqso/image/upload/v1776331149/holdings_k2dlqt.png', label: 'Kite — Trading Interface' },
 ];
 
 const projects = [
   {
-    title: "Profound Portfolio — Personal Brand",
+    title: "Surjeet’s Professional Portfolio",
     description: "A high-performance personal portfolio built with Next.js, Framer Motion, and a custom Node.js backend for admin management. Features a 'Floating Command Center' dashboard and optimized file handling.",
-    imageUrl: "/admin_dashboard/portfolio_login_page.png",
+    imageUrl: "https://res.cloudinary.com/di6zndqso/image/upload/v1776331860/Screenshot_2026-04-16_at_3.00.43_PM_gmm3ax.png",
     linkLabel: "Portfolio Project",
     githubUrl: "https://github.com/SurjeetKumar1/Surjeet_Portfolio.git",
     liveUrl: "https://surjeet-potfolio.vercel.app/"
@@ -26,7 +26,7 @@ const projects = [
   {
     title: "Wanderlust — Property Rental Platform",
     description: "A secure property rental backend platform featuring 15+ REST APIs, JWT authentication, and Mapbox integrations. Deployed via GitHub Actions to AWS EC2.",
-    imageUrl: "/projectImages/Wanderlust.png",
+    imageUrl: "https://res.cloudinary.com/di6zndqso/image/upload/v1776331147/Wanderlust_xq47lf.png",
     linkLabel: "Wanderlust Backend",
     githubUrl: "https://github.com/SurjeetKumar1/Wanderlust",
     liveUrl: "https://wanderlust-3sxl.onrender.com/listings"
@@ -34,7 +34,7 @@ const projects = [
   {
     title: "Linkify — Social Media Platform",
     description: "Real-time social media platform with a Next.js + Redux frontend, and scalable Node.js backend supporting 20+ user routes. Features PM2 optimization for 99% uptime.",
-    imageUrl: "/projectImages/Social Media Platform.png",
+    imageUrl: "https://res.cloudinary.com/di6zndqso/image/upload/v1776331147/Social_Media_Platform_nsbfq1.png",
     linkLabel: "Linkify App",
     githubUrl: "https://github.com/SurjeetKumar1/Linkify-frontend",
     liveUrl: "https://linkify-nine-jet.vercel.app/"
@@ -42,7 +42,7 @@ const projects = [
   {
     title: "Apna AI — AI Chat Application",
     description: "A ChatGPT-like AI chatbot integrating the GPT-4o-mini API with full persistent conversation storage in MongoDB and a React/Node.js stack.",
-    imageUrl: "/projectImages/Chat Aplication.png",
+    imageUrl: "https://res.cloudinary.com/di6zndqso/image/upload/v1776332082/frontend-live-chat_rzfdhq.png",
     linkLabel: "Apna AI Chatbot",
     githubUrl: "https://github.com/SurjeetKumar1/Apna-AI-Frontend",
     liveUrl: "https://apna-ai-rose.vercel.app/login"
@@ -50,7 +50,7 @@ const projects = [
   {
     title: "Stock Trading Platform — Zerodha Clone",
     description: "Full-stack Zerodha clone with a secure Node.js/JWT backend, 100+ simulated stock entries in MongoDB, and a React-powered trading interface.",
-    imageUrl: "/projectImages/Zeroda.png",
+    imageUrl: "https://res.cloudinary.com/di6zndqso/image/upload/v1776331148/Zeroda_hhz7qj.png",
     linkLabel: "Zerodha Clone",
     githubUrl: "https://github.com/SurjeetKumar1/Stock-Trading-Platform",
     liveUrl: "https://zerodha-snowy-three.vercel.app/"
@@ -58,7 +58,7 @@ const projects = [
   {
     title: "Kite Dashboard — Trading Interface",
     description: "A fast, clean trading dashboard inspired by Zerodha Kite, featuring real-time-like visualizations and interactive portfolio charts.",
-    imageUrl: "/projectImages/holdings.png",
+    imageUrl: "https://res.cloudinary.com/di6zndqso/image/upload/v1776331149/holdings_k2dlqt.png",
     linkLabel: "Kite App",
     githubUrl: "#",
     liveUrl: "https://zerodha-kite-kappa.vercel.app/login"
@@ -157,8 +157,8 @@ const Portfolio = () => {
 
   return (
     <motion.section variants={containerVariants} initial="hidden" animate="visible">
-      <motion.h2 variants={itemVariants} className="text-white text-3xl font-bold mb-12 mt-8 md:mt-0 flex items-center justify-between">
-        <span className="teal-underline">Creative Showcase</span>
+      <motion.h2 variants={itemVariants} className="text-white text-3xl font-bold mb-12 mt-4 md:mt-0 teal-underline">
+        Creative Showcase
       </motion.h2>
 
       <motion.div variants={itemVariants} className="mb-12">

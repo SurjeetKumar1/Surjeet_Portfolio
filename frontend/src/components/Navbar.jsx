@@ -1,7 +1,7 @@
 'use client';
 
 const Navbar = ({ activeTab, setActiveTab }) => {
-  const links = ['About', 'Resume', 'Projects', 'Contact', 'Gallery'];
+  const links = ['About', 'Resume', 'Projects', 'Achievements', 'Contact', 'Gallery'];
 
   return (
     <>

@@ -7,6 +7,7 @@ import Resume from "@/components/Resume";
 import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
 import Gallery from "@/components/Gallery";
+import Achievements from "@/components/Achievements";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('About');
@@ -27,6 +28,7 @@ export default function Home() {
       case 'About': return <About />;
       case 'Resume': return <Resume />;
       case 'Projects': return <Portfolio />;
+      case 'Achievements': return <Achievements />;
       case 'Contact': return <Contact />;
       case 'Gallery': return <Gallery />;
       default: return <About />;

@@ -22,7 +22,7 @@ const About = () => {
       animate="visible"
     >
       <motion.section variants={itemVariants}>
-        <h2 className="text-white text-3xl font-bold mb-8 mt-8 md:mt-0 teal-underline">Digital Identity</h2>
+        <h2 className="text-white text-3xl font-bold mb-8 mt-4 md:mt-0 teal-underline">Digital Identity</h2>
 
         <div className="space-y-6 text-white/70 leading-relaxed max-w-3xl">
           <p>
@@ -70,16 +70,16 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <PortfolioCard
-            title="Profound Portfolio"
+            title="Surjeet’s Professional Portfolio"
             description="High-performance personal brand platform with a Next.js/Framer Motion frontend and a custom Node.js admin dashboard."
-            imageUrl="/admin_dashboard/portfolio_login_page.png"
+            imageUrl="https://res.cloudinary.com/di6zndqso/image/upload/v1776331860/Screenshot_2026-04-16_at_3.00.43_PM_gmm3ax.png"
             linkLabel="Portfolio"
             githubUrl="https://github.com/SurjeetKumar1/Surjeet_Portfolio.git"
           />
           <PortfolioCard
             title="Linkify Social Media"
             description="Real-time social media platform with a Next.js/Redux frontend and scalable Node.js backend."
-            imageUrl="/projectImages/Social Media Platform.png"
+            imageUrl="https://res.cloudinary.com/di6zndqso/image/upload/v1776331147/Social_Media_Platform_nsbfq1.png"
             linkLabel="Linkify"
             githubUrl="https://github.com/SurjeetKumar1/Linkify-frontend"
           />

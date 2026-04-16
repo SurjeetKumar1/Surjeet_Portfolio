@@ -4,6 +4,9 @@ import Sidebar from "@/components/Sidebar";
 export const metadata = {
   title: "Surjeet | Software Developer",
   description: "Personal portfolio of Surjeet",
+  icons: {
+    icon: "https://res.cloudinary.com/di6zndqso/image/upload/v1776321622/ChatGPT_Image_Apr_16_2026_12_09_26_PM_nodjzy.png",
+  },
 };
 
 export default function RootLayout({ children }) {

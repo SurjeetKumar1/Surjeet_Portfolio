@@ -65,7 +65,7 @@ const Resume = () => {
       initial="hidden"
       animate="visible"
     >
-      <motion.h2 variants={itemVariants} className="text-white text-3xl font-bold mb-12 mt-8 md:mt-0">
+      <motion.h2 variants={itemVariants} className="text-white text-3xl font-bold mb-12 mt-4 md:mt-0 teal-underline">
         Career Snapshot
       </motion.h2>
 
@@ -170,14 +170,14 @@ const Resume = () => {
           <div className="bg-[#2b2b2c] p-6 md:p-8 rounded-3xl border border-white/5 shadow-lg">
             <SkillBar name="C / C++" percentage={90} />
             <SkillBar name="JavaScript" percentage={85} />
-            <SkillBar name="Data Structures & Algorithms" percentage={85} />
-            <SkillBar name="React.js / Next.js / Redux" percentage={85} />
-            <SkillBar name="Node.js / Express" percentage={80} />
-            <SkillBar name="MongoDB / Redis (Caching) / MySQL" percentage={85} />
-            <SkillBar name="AWS (EC2, S3, Lambda, SQS)" percentage={80} />
+            <SkillBar name="Data Structures & Algorithms" percentage={95} />
+            <SkillBar name="React.js / Next.js / Redux" percentage={90} />
+            <SkillBar name="Node.js / Express" percentage={95} />
+            <SkillBar name="MongoDB / Redis (Caching) / MySQL" percentage={90} />
+            <SkillBar name="AWS (EC2, S3, Lambda, SQS)" percentage={85} />
             <SkillBar name="Docker / Kubernetes / Nginx / PM2" percentage={80} />
-            <SkillBar name="Git / GitHub CI/CD" percentage={85} />
-            <SkillBar name="Windsurf / Cursor / Antigravity" percentage={95} />
+            <SkillBar name="Git / GitHub CI/CD" percentage={90} />
+            <SkillBar name="Windsurf / Cursor / Antigravity" percentage={90} />
           </div>
         </motion.div>
       </div>

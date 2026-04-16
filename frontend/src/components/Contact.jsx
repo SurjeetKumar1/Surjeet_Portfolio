@@ -79,8 +79,8 @@ const Contact = () => {
       animate="visible"
       transition={{ staggerChildren: 0.1 }}
     >
-      <motion.h2 variants={itemVariants} className="text-white text-3xl font-bold mb-12 mt-8 md:mt-0 flex items-center justify-between">
-        <span className="teal-underline">Let's Connect</span>
+      <motion.h2 variants={itemVariants} className="text-white text-3xl font-bold mb-12 mt-4 md:mt-0 teal-underline">
+        Let's Connect
       </motion.h2>
 
       <div className="space-y-12">
