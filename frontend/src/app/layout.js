@@ -4,7 +4,7 @@ import Sidebar from "@/components/Sidebar";
 const img = "https://res.cloudinary.com/di6zndqso/image/upload/v1776323389/Screenshot_2026-04-16_at_12.39.25_PM_cds39e.png";
 
 export const metadata = {
-  metadataBase: new URL('https://www.surjeet.in'),
+  // metadataBase: new URL('https://www.surjeet.in'),
   title: "Surjeet | Professional Portfolio",
   description: "Discover the professional portfolio, innovative full-stack projects, and technical milestones of Surjeet – a Software Engineer focused on algorithmic excellence and scalable solutions.",
   icons: {
@@ -30,7 +30,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Surjeet | Professional Portfolio",
     description: "Explore the professional journey, innovative projects, and technical achievements of Surjeet.",
-    images: ["https://res.cloudinary.com/di6zndqso/image/upload/v1776323389/Screenshot_2026-04-16_at_12.39.25_PM_cds39e.png"],
+    images: "https://res.cloudinary.com/di6zndqso/image/upload/v1776323389/Screenshot_2026-04-16_at_12.39.25_PM_cds39e.png",
   },
 };
 
