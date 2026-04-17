@@ -41,7 +41,7 @@ const About = () => {
           <span className="text-teal-400 text-2xl">☆</span> Highlights & Successes
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-3 gap-3 md:gap-6">
           {[
             { val: '500+', label: 'LeetCode Problems' },
             { val: '50+', label: 'REST APIs Built' },
@@ -50,10 +50,10 @@ const About = () => {
             <motion.div
               key={i}
               whileHover={{ y: -5, borderColor: 'rgba(45, 212, 191, 0.2)' }}
-              className="bg-[#2b2b2c] p-3 sm:p-5 lg:p-8 rounded-2xl lg:rounded-2xl border border-white/5 transition-colors group shadow-lg"
+              className="bg-[#2b2b2c] p-4 sm:p-6 lg:p-8 rounded-xl md:rounded-2xl border border-white/5 transition-all group shadow-lg text-center md:text-left"
             >
-              <h4 className="text-teal-400 text-4xl font-bold mb-3 group-hover:scale-110 transition-transform origin-left">{item.val}</h4>
-              <p className="text-white/40 text-[11px] uppercase font-bold tracking-[0.2em] leading-relaxed">{item.label}</p>
+              <h4 className="text-teal-400 text-xl sm:text-2xl md:text-4xl font-bold mb-1 md:mb-2 group-hover:scale-110 transition-transform origin-center md:origin-left">{item.val}</h4>
+              <p className="text-white/40 text-[8px] sm:text-[9px] md:text-[11px] uppercase font-bold tracking-[0.1em] md:tracking-[0.2em] leading-relaxed line-clamp-2 md:line-clamp-none whitespace-pre-line md:whitespace-normal">{item.label}</p>
             </motion.div>
           ))}
         </div>
@@ -75,6 +75,7 @@ const About = () => {
             imageUrl="https://res.cloudinary.com/di6zndqso/image/upload/v1776331860/Screenshot_2026-04-16_at_3.00.43_PM_gmm3ax.png"
             linkLabel="Portfolio"
             githubUrl="https://github.com/SurjeetKumar1/Surjeet_Portfolio.git"
+            liveUrl="https://www.surjeet.in/"
           />
           <PortfolioCard
             title="Linkify Social Media"
@@ -82,6 +83,7 @@ const About = () => {
             imageUrl="https://res.cloudinary.com/di6zndqso/image/upload/v1776331147/Social_Media_Platform_nsbfq1.png"
             linkLabel="Linkify"
             githubUrl="https://github.com/SurjeetKumar1/Linkify-frontend"
+            liveUrl="https://linkify-nine-jet.vercel.app/"
           />
         </div>
       </motion.section>

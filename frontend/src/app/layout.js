@@ -2,10 +2,32 @@ import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata = {
-  title: "Surjeet | Software Developer",
-  description: "Personal portfolio of Surjeet",
+  title: "Surjeet | Professional Portfolio",
+  description: "Surjeet’s Professional Portfolio - High-performance personal brand platform with a Next.js/Framer Motion frontend and a custom Node.js admin dashboard.",
   icons: {
     icon: "https://res.cloudinary.com/di6zndqso/image/upload/v1776321622/ChatGPT_Image_Apr_16_2026_12_09_26_PM_nodjzy.png",
+  },
+  openGraph: {
+    title: "Surjeet | Professional Portfolio",
+    description: "High-performance personal brand platform built with Next.js and Framer Motion.",
+    url: "https://www.surjeet.in",
+    siteName: "Surjeet Portfolio",
+    images: [
+      {
+        url: "https://res.cloudinary.com/di6zndqso/image/upload/v1776331860/Screenshot_2026-04-16_at_3.00.43_PM_gmm3ax.png",
+        width: 1200,
+        height: 630,
+        alt: "Surjeet Professional Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Surjeet | Professional Portfolio",
+    description: "High-performance personal brand platform built with Next.js and Framer Motion.",
+    images: ["https://res.cloudinary.com/di6zndqso/image/upload/v1776331860/Screenshot_2026-04-16_at_3.00.43_PM_gmm3ax.png"],
   },
 };
 

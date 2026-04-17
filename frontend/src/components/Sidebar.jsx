@@ -50,7 +50,7 @@ const Sidebar = () => {
 
       <div className="flex-1 text-left lg:text-center mt-0 lg:mt-0">
         <h1 className="text-white text-xl lg:text-3xl font-bold mb-1 lg:mb-2 tracking-wide italic" style={{ fontFamily: "'Playwrite NO', cursive" }}>Surjeet</h1>
-        <div className="bg-[#2b2b2c] text-[10px] text-white/80 px-3 lg:px-4 py-1 lg:py-1.5 rounded-lg mb-0 lg:mb-8 uppercase tracking-widest font-bold w-fit lg:mx-auto">
+        <div className="bg-[#2b2b2c] text-[10px] text-white/80 px-3 lg:px-4 py-1 lg:py-1.5 rounded-lg mb-0 lg:mb-4 uppercase tracking-widest font-bold w-fit lg:mx-auto">
           Software Developer
         </div>
       </div>
@@ -85,7 +85,7 @@ const Sidebar = () => {
             }}
             className="w-full lg:!h-auto lg:!opacity-100 overflow-hidden lg:overflow-visible"
           >
-            <div className="w-full h-[1px] bg-white/5 my-6 lg:mb-8"></div>
+            <div className="w-full h-[1px] bg-white/5 my-4 lg:my-6"></div>
 
             <div className="w-full space-y-6 text-left">
               <div className="flex items-center gap-4 group cursor-default">

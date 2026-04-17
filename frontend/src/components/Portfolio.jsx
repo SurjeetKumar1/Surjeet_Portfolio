@@ -17,11 +17,11 @@ const slides = [
 const projects = [
   {
     title: "Surjeet’s Professional Portfolio",
-    description: "A high-performance personal portfolio built with Next.js, Framer Motion, and a custom Node.js backend for admin management. Features a 'Floating Command Center' dashboard and optimized file handling.",
+    description: "High-performance personal brand platform with a Next.js/Framer Motion frontend and a custom Node.js admin dashboard.",
     imageUrl: "https://res.cloudinary.com/di6zndqso/image/upload/v1776331860/Screenshot_2026-04-16_at_3.00.43_PM_gmm3ax.png",
     linkLabel: "Portfolio Project",
     githubUrl: "https://github.com/SurjeetKumar1/Surjeet_Portfolio.git",
-    liveUrl: "https://surjeet-potfolio.vercel.app/"
+    liveUrl: "https://www.surjeet.in/"
   },
   {
     title: "Wanderlust — Property Rental Platform",

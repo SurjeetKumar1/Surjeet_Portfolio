@@ -177,7 +177,7 @@ const Resume = () => {
             <SkillBar name="AWS (EC2, S3, Lambda, SQS)" percentage={85} />
             <SkillBar name="Docker / Kubernetes / Nginx / PM2" percentage={80} />
             <SkillBar name="Git / GitHub CI/CD" percentage={90} />
-            <SkillBar name="Windsurf / Cursor / Antigravity" percentage={90} />
+            <SkillBar name="Windsurf / Cursor / Antigravity" percentage={95} />
           </div>
         </motion.div>
       </div>
