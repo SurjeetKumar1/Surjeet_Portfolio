@@ -8,7 +8,7 @@ export const metadata = {
   title: "Surjeet | Professional Portfolio",
   description: "Discover the professional portfolio, innovative full-stack projects, and technical milestones of Surjeet – a Software Engineer focused on algorithmic excellence and scalable solutions.",
   icons: {
-    icon: "https://res.cloudinary.com/di6zndqso/image/upload/v1776333545/WhatsApp_Image_2026-04-16_at_15.28.21_rjse4q.jpg",
+    icon: "https://res.cloudinary.com/di6zndqso/image/upload/v1776321622/ChatGPT_Image_Apr_16_2026_12_09_26_PM_nodjzy.png",
   },
   openGraph: {
     title: "Surjeet | Professional Portfolio",
@@ -17,9 +17,9 @@ export const metadata = {
     siteName: "Surjeet Portfolio",
     images: [
       {
-        url: "https://res.cloudinary.com/di6zndqso/image/upload/v1776333545/WhatsApp_Image_2026-04-16_at_15.28.21_rjse4q.jpg",
-        width: 1200,
-        height: 630,
+        url: "https://res.cloudinary.com/di6zndqso/image/upload/v1776464936/Screenshot_2026-04-18_at_3.58.20_AM_cwgtko.png",
+        width: 1100,
+        height: 800,
         alt: "Surjeet Professional Portfolio",
       },
     ],
@@ -30,7 +30,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Surjeet | Professional Portfolio",
     description: "Explore the professional journey, innovative projects, and technical achievements of Surjeet.",
-    images: "https://res.cloudinary.com/di6zndqso/image/upload/v1776333545/WhatsApp_Image_2026-04-16_at_15.28.21_rjse4q.jpg",
+    images: "https://res.cloudinary.com/di6zndqso/image/upload/v1776464936/Screenshot_2026-04-18_at_3.58.20_AM_cwgtko.png",
   },
 };
 
