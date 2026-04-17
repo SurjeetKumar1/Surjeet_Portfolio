@@ -1,6 +1,8 @@
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 
+const img = "https://res.cloudinary.com/di6zndqso/image/upload/v1776323389/Screenshot_2026-04-16_at_12.39.25_PM_cds39e.png";
+
 export const metadata = {
   title: "Surjeet | Professional Portfolio",
   description: "Discover the professional portfolio, innovative full-stack projects, and technical milestones of Surjeet – a Software Engineer focused on algorithmic excellence and scalable solutions.",
@@ -14,7 +16,7 @@ export const metadata = {
     siteName: "Surjeet Portfolio",
     images: [
       {
-        url: "https://res.cloudinary.com/di6zndqso/image/upload/v1776323389/Screenshot_2026-04-16_at_12.39.25_PM_cds39e.png",
+        url: img,
         width: 1200,
         height: 630,
         alt: "Surjeet Professional Portfolio",
@@ -27,7 +29,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Surjeet | Professional Portfolio",
     description: "Explore the professional journey, innovative projects, and technical achievements of Surjeet.",
-    images: ["https://res.cloudinary.com/di6zndqso/image/upload/v1776323389/Screenshot_2026-04-16_at_12.39.25_PM_cds39e.png"],
+    images: [img],
   },
 };
 
