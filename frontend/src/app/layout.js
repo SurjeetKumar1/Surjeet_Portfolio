@@ -1,7 +1,7 @@
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 
-const img = "https://res.cloudinary.com/di6zndqso/image/upload/v1776333545/WhatsApp_Image_2026-04-16_at_15.28.21_rjse4q.jpg";
+const img = "https://res.cloudinary.com/di6zndqso/image/upload/v1776464936/Screenshot_2026-04-18_at_3.58.20_AM_cwgtko.png";
 
 export const metadata = {
   metadataBase: new URL('https://www.surjeet.in'),
@@ -12,7 +12,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Surjeet | Professional Portfolio",
-    description: "Explore the professional journey, innovative projects, and technical achievements of Surjeet.",
+    description: "Explore the work, experience, and projects of Surjeet.",
     url: "https://www.surjeet.in",
     siteName: "Surjeet Portfolio",
     images: [
@@ -29,7 +29,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Surjeet | Professional Portfolio",
-    description: "Explore the professional journey, innovative projects, and technical achievements of Surjeet.",
+    description: "Explore the work, experience, and projects of Surjeet.",
     images: "https://res.cloudinary.com/di6zndqso/image/upload/v1776464936/Screenshot_2026-04-18_at_3.58.20_AM_cwgtko.png",
   },
 };
