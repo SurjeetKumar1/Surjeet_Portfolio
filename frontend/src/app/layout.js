@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "Surjeet Portfolio",
     images: [
       {
-        url: "https://res.cloudinary.com/di6zndqso/image/upload/v1776464936/Screenshot_2026-04-18_at_3.58.20_AM_cwgtko.png",
+        url: "https://res.cloudinary.com/di6zndqso/image/upload/v1776615420/Screenshot2026-04-19at9.38.26P_wofcro.jpg",
         width: 1100,
         height: 800,
         alt: "Surjeet Professional Portfolio",
@@ -30,7 +30,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Surjeet | Professional Portfolio",
     description: "Explore the work, experience, and projects of Surjeet.",
-    images: "https://res.cloudinary.com/di6zndqso/image/upload/v1776464936/Screenshot_2026-04-18_at_3.58.20_AM_cwgtko.png",
+    images: "https://res.cloudinary.com/di6zndqso/image/upload/v1776615420/Screenshot2026-04-19at9.38.26P_wofcro.jpg",
   },
 };
 
