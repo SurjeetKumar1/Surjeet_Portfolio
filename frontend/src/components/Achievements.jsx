@@ -71,7 +71,7 @@ const Achievements = () => {
 
       {/* Achievement Highlights */}
       <motion.section variants={itemVariants} className="mt-8">
-        <div className="grid grid-cols-3 gap-3 md:gap-6">
+        <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-6">
           {[
             { val: '500+', label: 'DSA Problems' },
             { val: '50+', label: 'SQL Solutions' },
@@ -80,10 +80,10 @@ const Achievements = () => {
             <motion.div
               key={i}
               whileHover={{ y: -5, borderColor: 'rgba(45, 212, 191, 0.2)' }}
-              className="bg-[#2b2b2c] p-4 sm:p-6 lg:p-8 rounded-xl md:rounded-2xl border border-white/5 transition-all group shadow-lg text-center md:text-left"
+              className="bg-[#2b2b2c] px-2 py-4 sm:p-6 lg:p-8 rounded-xl md:rounded-2xl border border-white/5 transition-all group shadow-lg text-center md:text-left flex flex-col justify-center"
             >
-              <h4 className="text-teal-400 text-xl sm:text-2xl md:text-4xl font-bold mb-1 md:mb-2 group-hover:scale-110 transition-transform origin-center md:origin-left">{item.val}</h4>
-              <p className="text-white/40 text-[8px] sm:text-[9px] md:text-[11px] uppercase font-bold tracking-[0.1em] md:tracking-[0.2em] leading-relaxed line-clamp-2 md:line-clamp-none whitespace-pre-line md:whitespace-normal">{item.label}</p>
+              <h4 className={`text-teal-400 ${item.val.length > 5 ? 'text-sm xs:text-base sm:text-xl' : 'text-lg sm:text-2xl'} md:text-4xl font-bold mb-1 md:mb-2 group-hover:scale-110 transition-transform origin-center md:origin-left truncate sm:overflow-visible`}>{item.val}</h4>
+              <p className="text-white/40 text-[7px] sm:text-[9px] md:text-[11px] uppercase font-bold tracking-widest leading-relaxed line-clamp-2 md:line-clamp-none whitespace-pre-line md:whitespace-normal">{item.label}</p>
             </motion.div>
           ))}
         </div>
@@ -144,7 +144,7 @@ const Achievements = () => {
                   <FontAwesomeIcon icon={faLeetcode} className="text-[#FFA116]" />
                   <span className="text-teal-400 text-[10px] font-bold uppercase tracking-widest">Global Profile</span>
                 </div>
-                <h3 className="text-white text-2xl md:text-3xl font-bold mb-3 md:mb-4">Algorithmic Mastery</h3>
+                <h3 className="text-white text-2xl md:text-3xl font-bold mb-3 md:mb-4">LeetCode Profile</h3>
                 <p className="text-white/50 text-xs md:text-sm leading-relaxed mb-6 md:mb-8 max-w-md mx-auto lg:mx-0">
                   Solving complex algorithmic problems with a focus on optimization, clean code, and advanced database querying.
                 </p>

@@ -85,7 +85,7 @@ const Contact = () => {
 
       <div className="space-y-12">
         {/* Map Embed */}
-        <motion.div variants={itemVariants} className="w-full h-80 rounded-[2rem] overflow-hidden border border-white/5 shadow-2xl relative">
+        <motion.div variants={itemVariants} className="w-full h-80 rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden border border-white/5 shadow-2xl relative">
           <div className="absolute inset-0 bg-teal-400 mix-blend-color opacity-10 pointer-events-none"></div>
           <iframe
             src="https://maps.google.com/maps?q=27.0257699,79.9215322&z=16&output=embed"
@@ -100,26 +100,26 @@ const Contact = () => {
 
         {/* Contact Details */}
         <motion.div variants={itemVariants}>
-          <h3 className="text-white text-2xl font-bold mb-6">Contact Details</h3>
-          <div className="bg-[#2b2b2c] p-6 md:p-8 rounded-3xl border border-white/5 shadow-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-            <div className="space-y-8">
-              <div className="flex items-center gap-5 group cursor-default">
-                <div className="w-14 h-14 bg-[#1e1e1f] rounded-2xl flex items-center justify-center text-teal-400 border border-teal-400/10 group-hover:bg-teal-400 group-hover:text-black transition-all duration-300 shadow-md">
-                  <Smartphone size={24} />
+          <h3 className="text-white text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Contact Details</h3>
+          <div className="bg-[#2b2b2c] p-4 sm:p-6 md:p-8 rounded-[1.5rem] sm:rounded-3xl border border-white/5 shadow-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-6 sm:gap-8">
+            <div className="space-y-5 sm:space-y-8">
+              <div className="flex items-center gap-4 sm:gap-5 group cursor-default">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#1e1e1f] rounded-xl sm:rounded-2xl flex items-center justify-center text-teal-400 border border-teal-400/10 group-hover:bg-teal-400 group-hover:text-black transition-all duration-300 shadow-md shrink-0">
+                  <Smartphone size={20} className="sm:w-6 sm:h-6" />
                 </div>
                 <div>
-                  <p className="text-white/40 text-xs font-bold uppercase tracking-[0.2em] mb-1.5">Mobile</p>
-                  <p className="text-white/90 text-lg font-medium tracking-wide">+91 93699 72617</p>
+                  <p className="text-white/40 text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] mb-1 sm:mb-1.5">Mobile</p>
+                  <p className="text-white/90 text-base sm:text-lg font-medium tracking-wide">+91 93699 72617</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-5 group cursor-default">
-                <div className="w-14 h-14 bg-[#1e1e1f] rounded-2xl flex items-center justify-center text-teal-400 border border-teal-400/10 group-hover:bg-teal-400 group-hover:text-black transition-all duration-300 shadow-md">
-                  <Mail size={24} />
+              <div className="flex items-center gap-4 sm:gap-5 group cursor-default">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#1e1e1f] rounded-xl sm:rounded-2xl flex items-center justify-center text-teal-400 border border-teal-400/10 group-hover:bg-teal-400 group-hover:text-black transition-all duration-300 shadow-md shrink-0">
+                  <Mail size={20} className="sm:w-6 sm:h-6" />
                 </div>
                 <div>
-                  <p className="text-white/40 text-xs font-bold uppercase tracking-[0.2em] mb-1.5">Email</p>
-                  <p className="text-white/90 text-lg font-medium tracking-wide break-all sm:break-normal">surjeet636kumar@gmail.com</p>
+                  <p className="text-white/40 text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] mb-1 sm:mb-1.5">Email</p>
+                  <p className="text-white/90 text-[15px] sm:text-lg font-medium tracking-wide break-all sm:break-normal">surjeet636kumar@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -143,22 +143,22 @@ const Contact = () => {
 
         {/* Contact Form */}
         <motion.div variants={itemVariants}>
-          <h3 className="text-white text-2xl font-bold mb-6">Contact Form</h3>
+          <h3 className="text-white text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Contact Form</h3>
 
-          <div className="bg-[#2b2b2c] p-5 md:p-8 rounded-3xl border border-white/5 shadow-lg">
+          <div className="bg-[#2b2b2c] p-4 sm:p-5 md:p-8 rounded-[1.5rem] sm:rounded-3xl border border-white/5 shadow-lg">
             {status.message && (
               <motion.div
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className={`mb-6 p-4 rounded-2xl flex items-center gap-3 ${status.type === 'success' ? 'bg-teal-400/10 text-teal-400 border border-teal-400/20' : 'bg-red-400/10 text-red-400 border border-red-400/20'}`}
+                className={`mb-6 p-4 rounded-xl sm:rounded-2xl flex items-center gap-3 ${status.type === 'success' ? 'bg-teal-400/10 text-teal-400 border border-teal-400/20' : 'bg-red-400/10 text-red-400 border border-red-400/20'}`}
               >
                 {status.type === 'success' ? <CheckCircle2 size={18} /> : <AlertCircle size={18} />}
                 <span className="text-sm font-medium">{status.message}</span>
               </motion.div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <input
                   type="text"
                   name="name"
@@ -166,7 +166,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Full Name"
                   required
-                  className="w-full bg-[#1e1e1f] text-white/90 placeholder:text-white/30 px-6 py-4 rounded-2xl border border-white/5 focus:outline-none focus:border-teal-400/50 focus:ring-1 focus:ring-teal-400/50 transition-all font-medium"
+                  className="w-full bg-[#1e1e1f] text-sm sm:text-base text-white/90 placeholder:text-white/30 px-4 py-3 sm:px-6 sm:py-4 rounded-xl sm:rounded-2xl border border-white/5 focus:outline-none focus:border-teal-400/50 focus:ring-1 focus:ring-teal-400/50 transition-all font-medium"
                 />
                 <input
                   type="email"
@@ -175,7 +175,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Email Address"
                   required
-                  className="w-full bg-[#1e1e1f] text-white/90 placeholder:text-white/30 px-6 py-4 rounded-2xl border border-white/5 focus:outline-none focus:border-teal-400/50 focus:ring-1 focus:ring-teal-400/50 transition-all font-medium"
+                  className="w-full bg-[#1e1e1f] text-sm sm:text-base text-white/90 placeholder:text-white/30 px-4 py-3 sm:px-6 sm:py-4 rounded-xl sm:rounded-2xl border border-white/5 focus:outline-none focus:border-teal-400/50 focus:ring-1 focus:ring-teal-400/50 transition-all font-medium"
                 />
               </div>
 
@@ -184,9 +184,9 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Your Message"
-                rows="6"
+                rows="5"
                 required
-                className="w-full bg-[#1e1e1f] text-white/90 placeholder:text-white/30 px-6 py-4 rounded-2xl border border-white/5 focus:outline-none focus:border-teal-400/50 focus:ring-1 focus:ring-teal-400/50 transition-all resize-none font-medium"
+                className="w-full bg-[#1e1e1f] text-sm sm:text-base text-white/90 placeholder:text-white/30 px-4 py-3 sm:px-6 sm:py-4 rounded-xl sm:rounded-2xl border border-white/5 focus:outline-none focus:border-teal-400/50 focus:ring-1 focus:ring-teal-400/50 transition-all resize-none font-medium"
               ></textarea>
 
               <div className="w-full">
@@ -200,18 +200,18 @@ const Contact = () => {
                 <button
                   type="button"
                   onClick={() => fileInputRef.current.click()}
-                  className={`w-full bg-[#1e1e1f] px-6 py-4 rounded-2xl border border-white/5 flex items-center justify-center gap-3 transition-all font-semibold ${file ? 'text-teal-400 border-teal-400/30' : 'text-teal-400/80 hover:text-teal-400 hover:border-teal-400/20'}`}
+                  className={`w-full bg-[#1e1e1f] text-sm sm:text-base px-4 py-3 sm:px-6 sm:py-4 rounded-xl sm:rounded-2xl border border-white/5 flex items-center justify-center gap-2 sm:gap-3 transition-all font-semibold ${file ? 'text-teal-400 border-teal-400/30' : 'text-teal-400/80 hover:text-teal-400 hover:border-teal-400/20'}`}
                 >
                   <Paperclip size={18} /> {file ? file.name : 'Attach PDF (Optional)'}
                 </button>
-                <p className="text-white/30 text-xs mt-3 ml-2">Only PDF files up to 1 MB</p>
+                <p className="text-white/30 text-[10px] sm:text-xs mt-2 sm:mt-3 ml-2">Only PDF files up to 1 MB</p>
               </div>
 
-              <div className="flex flex-col sm:flex-row justify-end items-center gap-6 pt-4">
+              <div className="flex flex-col sm:flex-row justify-end items-center gap-4 sm:gap-6 pt-2 sm:pt-4">
                 <button
                   type="submit"
                   disabled={loading}
-                  className="bg-[#1e1e1f] text-white/90 hover:text-teal-400 hover:bg-[#252526] hover:border-teal-400/30 px-8 py-4 rounded-2xl border border-white/5 flex items-center justify-center gap-3 transition-all font-bold w-full sm:w-auto disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="bg-[#1e1e1f] text-sm sm:text-base text-white/90 hover:text-teal-400 hover:bg-[#252526] hover:border-teal-400/30 px-6 py-3 sm:px-8 sm:py-4 rounded-xl sm:rounded-2xl border border-white/5 flex items-center justify-center gap-2 sm:gap-3 transition-all font-bold w-full sm:w-auto disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {loading ? <Loader2 className="animate-spin" size={18} /> : <Send size={18} />}
                   {loading ? 'Sending...' : 'Send Message'}

@@ -44,3 +44,12 @@ body {
   content: '';
   @apply absolute bottom-[-8px] left-0 w-12 h-1.5 bg-teal-400 rounded-full;
 }
+
+/* Hide scrollbar for mobile navbar horizontally */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

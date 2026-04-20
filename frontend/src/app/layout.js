@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="antialiased">
-        <main className=" mx-auto p-4 lg:p-8 flex flex-col lg:flex-row gap-6 lg:gap-8 min-h-screen pb-32 lg:pb-8">
+        <main className=" mx-auto p-4 lg:p-8 flex flex-col lg:flex-row gap-6 lg:gap-8 min-h-screen pb-20 lg:pb-8">
           <Sidebar />
           <div className="flex-1">
             {children}
