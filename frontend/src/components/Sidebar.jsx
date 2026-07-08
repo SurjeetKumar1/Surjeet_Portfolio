@@ -41,7 +41,7 @@ const Sidebar = () => {
       {/* Profile Image */}
       <div className="w-20 h-20 lg:w-40 lg:h-40 bg-[#2b2b2c] rounded-xl lg:rounded-2xl lg:mb-6 overflow-hidden flex items-center justify-center border border-white/10 shadow-xl flex-shrink-0">
         <img
-          src="https://res.cloudinary.com/di6zndqso/image/upload/v1776323389/Screenshot_2026-04-16_at_12.39.25_PM_cds39e.png"
+          src="https://res.cloudinary.com/draiaxkin/image/upload/v1783526262/WhatsApp_Image_2026-06-10_at_09.21.49_xrwk0n.jpg"
           // src="/profile_avatar.png"
           alt="Profile"
           className="w-full h-full object-cover"
