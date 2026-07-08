@@ -83,7 +83,7 @@ const Resume = () => {
             <TimelineItem
               title="Software Developer Intern"
               company="Shubh Hyundai | Palanpur, Gujarat"
-              date="Dec 2025 — Present"
+              date="Oct 2025 — Present"
               description={[
                 "Worked on AutoAtlas, a scalable showroom management platform; built Bodyshop Flow and Mechanical Service Flow handling 100+ vehicles/day, along with vehicle tracking and real-time notifications using Agile methodology, now live across 2 locations.",
                 "Eliminated Excel-based processes with a centralized data system, reducing manual effort by ~90% and improving operational accuracy; applied database indexing to optimize query performance.",
