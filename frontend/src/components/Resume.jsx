@@ -114,7 +114,7 @@ const Resume = () => {
           <div className="ml-2">
             <TimelineItem
               title="Central University of Haryana"
-              company="B.Tech in Computer Science & Engineering | CGPA: 7.7/10"
+              company="B.Tech in Computer Science & Engineering | CGPA: 8.4/10"
               date="2022 — 2026"
               description="Relevant coursework: Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Computer Networks."
             />
